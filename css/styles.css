@@ -767,9 +767,7 @@ address{
 .form{
     width: 100%;
     height: 100%;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 40px;
 }
 
 .form-title{
@@ -782,14 +780,6 @@ address{
     color: var(--primary-text-color);
 }
 
-.form-label{
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    
-    color: var(--text-color);
-    margin-bottom: 4px;
-}
 .form-field{
     position: relative;
     display: flex;
@@ -797,12 +787,13 @@ address{
     margin-bottom: 10px;
     
     font-size: 12px;
-    line-height: 0.86;
+    line-height: 1.17;
     letter-spacing: 0.01em;
     color: var(--text-color);
 }
 .form-imput{
     outline: none;
+    margin-top: 4px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 30px;
@@ -817,10 +808,10 @@ address{
     width: 18px;
     height: 18px;
     margin-left: 12px;
-    transform: translateY(-50%);
     transition: fill 250ms var(--timing-function);
 }
-.form-imput:focus{
+.form-imput:focus,
+.form-imput:hover{
     border-color: var(--accent-color);
 }
 
@@ -831,6 +822,7 @@ address{
 .comment{
     outline: none;
     resize: none;
+    margin-top: 4px;
     padding: 12px 16px;
     font-size: 12px;
     line-height: 0.86;
@@ -840,7 +832,8 @@ address{
     border-radius: 4px;
     transition: border-color 250ms var(--timing-function);
 }
-.comment:focus {
+.comment:focus,
+.comment:hover {
     border-color: var(--accent-color);
     color: var(--primary-text-color);
 }
